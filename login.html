@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aplikasi Gudang V1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS & JS -->
+  <link rel="stylesheet" type="text/css" href="CSS\style.css">
+  <link rel="stylesheet" type="text/css" href="font\icon.css">
+  <link rel="stylesheet" type="text/css" href="CSS\material.min.css">
+  <link rel="stylesheet" type="text/css" href="font\fontawesome-5.8.1\css\all.css">
+
+</head>
+<body>
+<div id="login-page">
+<div class="--formlogin">
+
+<!-- Textfield with Floating Label -->
+
+<form action="index.html">
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+  <input class="mdl-textfield__input" type="email" id="email">
+  <label class="mdl-textfield__label" for="email">Email</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+  <input class="mdl-textfield__input" type="password" id="password">
+  <label class="mdl-textfield__label" for="password">Password</label>
+  <span class="showpass fa-eye" onclick="show()"></span>
+</div>
+<button type="Submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Submit
+</button>
+</form>
+
+</div>
+
+<!-- Daftar Button -->
+<div class="--daftarbutton">
+<button type="Submit" onclick="location.href='daftar.html'" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Daftar
+</button>
+</div>
+<!-- Daftar Button -->
+
+</div>
+</body>
+  <script type="text/javascript" src="JS\material.min.js"></script>
+</html>

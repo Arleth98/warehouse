@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aplikasi Gudang V1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS & JS -->
+  <link rel="stylesheet" type="text/css" href="CSS\style.css">
+  <link rel="stylesheet" type="text/css" href="font\icon.css">
+  <link rel="stylesheet" type="text/css" href="CSS\material.min.css">
+
+</head>
+<body>
+<!-- Menu Nav -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600 is-casting-shadow">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Informasi Barang Keluar</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+
+      <!-- Right aligned menu below button -->
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+<form action="#">
+  <div class="mdl-js-textfield mdl-textfield--expandable">
+    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+      <i class="material-icons">search</i>
+    </label>
+    <div class="mdl-textfield__expandable-holder">
+      <input class="mdl-textfield__input" type="text" id="sample6">
+      <label class="mdl-textfield__label" for="sample-expandable">Cari</label>
+    </div>
+  </div>
+</form>
+<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">more_vert</i></button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+  <li class="mdl-menu__item">Home</li>
+  <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Account</li>
+  <li disabled class="mdl-menu__item">Setting</li>
+  <li class="mdl-menu__item"><a href="login.html">Keluar</a></li>
+</ul>
+</div>
+</header>
+
+  <div class="fixed mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+    <span class="mdl-layout-title">Menu Side</span>
+     <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href="barang-masuk.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">library_add</i>Barang Masuk</a>
+          <a class="mdl-navigation__link" href="barang-keluar.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">send</i>Barang Keluar</a>
+        <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">history</i>History</a>
+          <a class="mdl-navigation__link" href="laporan.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">bookmark</i>Laporan</a>
+         <div class="mdl-layout-spacer fixed"></div>
+          <a class="mdl-navigation__link" href="help.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i>Help</a>
+        </nav>
+    <footer class="mdl-color--blue-grey-900 mdl-mini-footer mdl-typography--text-center">Copyright © 2019</footer>
+  </div>
+</div>
+<div class="clear"></div>
+<!-- Menu Nav -->
+
+<main class="mdl-layout__content">
+   <div class="page-content mdl-max-width ">
+<form action="#" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+  <div class="mdl-card__title mdl-card--expand mdl-button--raised mdl-button--colored mdl-color-text--white">
+    <h2 class="mdl-card__title-text">Histori</h2>
+  </div>
+  <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+
+
+  <div class="group">
+    <div class="left"><label>Tampilkan Data</label></div>
+    <div class="right">
+    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+      <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+      <span class="mdl-checkbox__label">Barang Masuk</span>
+    </label>
+    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+      <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+      <span class="mdl-checkbox__label">Barang Keluar</span>
+    </label>
+    </div>
+  </div>
+
+
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Show<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+  </div>
+</form>
+
+<!-- Hasil Laporan Table -->
+<table align="center" class="mdl-cell--12-col mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric mdl-data-table__header--sorted-ascending">Nama</th>
+      <th class="mdl-data-table__cell--non-numeric">Tipe</th>
+      <th>Jumlah</th>
+      <th>Diinput Tanggal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">John Lennon</td>
+      <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+      <td>40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Paul McCartney</td>
+      <td class="mdl-data-table__cell--non-numeric">The cute one</td>
+      <td>73</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">George Harrison</td>
+      <td class="mdl-data-table__cell--non-numeric">The shy one</td>
+      <td>58</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+      <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+      <td>74</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+   </div>
+</main>
+
+</body>
+  <script type="text/javascript" src="JS\material.min.js"></script>
+</html>

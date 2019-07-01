@@ -1,0 +1,143 @@
+body{
+	background-color: #ecf0f1;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+a:link,a:visited{color: #333;text-decoration: none;}
+.mdl-layout__content * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clear{display: block;clear: both;}
+
+.mdl-menu--bottom-right a{color: #333;}
+.demo-navigation .mdl-navigation__link .material-icons {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.56);
+    margin-right: 32px;
+}
+.mdl-layout__content {
+    margin-left: 240px;
+}
+.mdl-layout__header {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+}
+.mdl-layout__container .fixed{position: fixed;}
+.mdl-width1{
+	max-width: 1080px;
+}
+.mdl-max-width {
+    width: 1075px;
+}.page-content {
+    max-width: 100%;
+}
+.br-m{
+	margin: auto;
+	padding: 10px 0;
+	text-align: center;
+}
+
+/* Bagian Login */
+#login-page {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: -webkit-gradient(linear,right top,left top,from(#013f78),color-stop(#0065b7),to(#0071cd));
+    background: linear-gradient(270deg,#013f78,#0065b7,#0071cd);
+    bottom: 0;
+}
+.--formlogin form .mdl-textfield {
+    display: block;
+}.--formlogin {
+max-width: 300px;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    height: fit-content;
+    height: -moz-fit-content;
+    max-height: 170px;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    vertical-align: middle;
+    top: 15%;
+    right: 0;
+    left: 0;
+    bottom: 15%;
+}
+.--formdaftar {
+    max-width: 300px;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    height: fit-content;
+    height: -moz-fit-content;
+    max-height: 315px;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    vertical-align: middle;
+    top: 15%;
+    right: 0;
+    left: 0;
+    bottom: 15%;
+}
+.--daftarbutton{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.showpass,.showpass2{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    font-family: "Font Awesome 5 Free";
+}
+.showpass[type="checkbox"]{
+    z-index: 0;
+}
+/*.showpass:before{
+    content: '\f06e';
+    
+    background: #FFF;
+    z-index: 1;
+    padding: 3px;
+    color: #999;
+    cursor: pointer;
+}*/
+.mdl-layout__content .addmdlfloat {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 3;
+}
+.group .right {
+    float: right;
+    padding: 0 50px;
+}.group .left {
+    float: left;
+    padding: 0 50px;
+}
+.group {
+    display: flex;
+    overflow: hidden;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px){
+.mdl-layout__content {margin-left: 0;}
+.mdl-max-width{max-width: 100%;width: auto;justify-content: center;}
+.br-m .mdl-textfield{display: block;}
+.mdl-layout__header .mdl-layout__header-row{padding: 0 35px 0 62px}
+}
