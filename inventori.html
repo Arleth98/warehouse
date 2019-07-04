@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Aplikasi Gudang V1</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS & JS -->
@@ -101,6 +102,11 @@
     <label class="mdl-textfield__label" for="jumlahbarang">Jumlah...</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div>
+
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-input-gambar" type="file" id="gambar">
+  </div>
+
 </form>
 
   </div>
@@ -192,15 +198,15 @@
 </body>
 <!-- Javascript -->
   <script type="text/javascript" src="./JS/material.min.js"></script>
+  <script type="text/javascript" src="./JS/dialog-polyfill.min.js"></script>
   <script type="text/javascript" defer="defer">//<![CDATA[
     // Dialog Button
-  (function() {
-    'use strict';
     var dialogButton = document.querySelector('.dialog-button');
     var dialog = document.querySelector('#dialog');
-    if (! dialog.showModal) {
-      dialogPolyfill.registerDialog(dialog);
-    }
+jQuery(document)["ready"](function () {
+  if (!dialog.showModal) {
+    dialogPolyfill.registerDialog(dialog);
+  }
     dialogButton.addEventListener('click', function() {
        dialog.showModal();
     });

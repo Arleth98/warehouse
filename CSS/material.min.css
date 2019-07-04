@@ -31,6 +31,11 @@ footer ul li{display:inline;position:relative}
 footer ul li:last-child:after{display:none}
 footer ul li:after{content:','}
 .mdl-layout__content .addmdlfloat{position:fixed;bottom:3%;right:3%;z-index:3}
+.mdl-input-gambar{color:transparent;width:100%;max-width:100%;overflow:hidden;padding:0;max-height:35px;}
+.mdl-input-gambar::-webkit-file-upload-button,.mdl-input-gambar[type=file]::-webkit-file-upload-button{visibility: hidden;}
+.mdl-input-gambar::before{content:'Upload Gambar';display:block;width:100%;background-color:#333;border:none;outline:none;cursor:pointer;padding:10px 58px;color:#fff;max-width:100%}
+.mdl-input-gambar:hover::before{background-color: #222;}
+.mdl-input-gambar:focus,.mdl-input-gambar:active{outline:none}
 .group .right{float:right;padding:0 50px}
 .group .left{float:left;padding:0 50px}
 .group{display:flex;overflow:hidden;padding:10px}
@@ -1244,3 +1249,4 @@ iframe.heightSet{overflow:hidden}
 .demo-wrapper iframe{border:1px solid rgba(0,0,0,.5)}
 .mdl-select-option {color:#777;font-size:16px;padding:3px;margin:2px auto;outline:none;}
 .mdl-select-option option{}
+dialog{position:fixed;left:0;right:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;border:solid;padding:1em;background:white;color:black;display:none}dialog[open]{display:block}dialog+.backdrop{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.1)}@media screen and (max-width:540px){dialog[_polyfill_modal]{top:0;width:auto;margin:1em}}._dialog_overlay{position:fixed;top:0;right:0;bottom:0;left:0}
