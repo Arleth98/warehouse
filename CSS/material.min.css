@@ -16,16 +16,17 @@ a:link,a:visited{color:#333;text-decoration:none}
 .page-content{max-width:100%}
 .br-m{margin:auto;padding:10px 0;text-align:center}
 /* Bagian Login */
-#login-page{position:fixed;top:0;right:0;left:0;background:-webkit-gradient(linear,right top,left top,from(#013f78),color-stop(#0065b7),to(#0071cd));background:linear-gradient(270deg,#013f78,#0065b7,#0071cd);bottom:0}
+#login-page{position:fixed;top:0;right:0;left:0;background:linear-gradient(290deg,#2a40f2,#2ab3f2,#872af2,#f22aa4);background-size:800% 800%;bottom:0;-webkit-animation:AnimationName 10s ease infinite;-moz-animation:AnimationName 10s ease infinite;-o-animation:AnimationName 10s ease infinite;animation:AnimationName 10s ease infinite;}
 .--formlogin form .mdl-textfield{display:block}
 .--formlogin{max-width:300px;margin:auto;background:#fff;padding:10px;height:fit-content;height:-moz-fit-content;max-height:170px;box-shadow:0 1px 5px 1px rgba(0,0,0,.3);border-radius:3px;display:flex;position:absolute;justify-content:center;vertical-align:middle;top:15%;right:0;left:0;bottom:15%}
 .--formdaftar{max-width:300px;margin:auto;background:#fff;padding:10px;height:fit-content;height:-moz-fit-content;max-height:315px;box-shadow:0 1px 5px 1px rgba(0,0,0,.3);border-radius:3px;display:flex;position:absolute;justify-content:center;vertical-align:middle;top:15%;right:0;left:0;bottom:15%}
 .--daftarbutton{position:absolute;right:10px;top:10px}
 .showpass,.showpass2{cursor:pointer;position:absolute;right:0;bottom:25px;font-family:"Font Awesome 5 Free"}
 .showpass[type="checkbox"]{z-index:0}
+@-webkit-keyframes AnimationName{0%{background-position:0% 19%}50%{background-position:100% 82%}100%{background-position:0% 19%}}@-moz-keyframes AnimationName{0%{background-position:0% 19%}50%{background-position:100% 82%}100%{background-position:0% 19%}}@-o-keyframes AnimationName{0%{background-position:0% 19%}50%{background-position:100% 82%}100%{background-position:0% 19%}}@keyframes AnimationName{0%{background-position:0% 19%}50%{background-position:100% 82%}100%{background-position:0% 19%}}
 /*.showpass:before{content:'\f06e';background:#FFF;z-index:1;padding:3px;color:#999;cursor:pointer}
 */
-footer ul{margin:auto;padding:0;clear:both;overflow:hidden;display:block;width:100%;text-align:left;font-size:13px;color:darkorange;}
+footer ul{margin:auto;padding:0;clear:both;overflow:hidden;display:block;width:100%;text-align:left;font-size:13px;}
 footer ul li{display:inline;position:relative}
 footer ul li:last-child:after{display:none}
 footer ul li:after{content:','}
