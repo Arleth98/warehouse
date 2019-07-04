@@ -25,6 +25,10 @@ a:link,a:visited{color:#333;text-decoration:none}
 .showpass[type="checkbox"]{z-index:0}
 /*.showpass:before{content:'\f06e';background:#FFF;z-index:1;padding:3px;color:#999;cursor:pointer}
 */
+footer ul{margin:auto;padding:0;clear:both;overflow:hidden;display:block;width:100%;text-align:left;font-size:13px;color:darkorange;}
+footer ul li{display:inline;position:relative}
+footer ul li:last-child:after{display:none}
+footer ul li:after{content:','}
 .mdl-layout__content .addmdlfloat{position:fixed;bottom:3%;right:3%;z-index:3}
 .group .right{float:right;padding:0 50px}
 .group .left{float:left;padding:0 50px}
